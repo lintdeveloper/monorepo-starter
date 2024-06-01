@@ -85,6 +85,15 @@ importers:
       vite: 5.2.12
       vite-tsconfig-paths: 4.3.2_cefd3cwmz66kqrognmapqnuzba
 
+  packages/shared-ui:
+    specifiers:
+      react: ^18.2.0
+      typescript: ^5.4.5
+    dependencies:
+      react: 18.3.1
+    devDependencies:
+      typescript: 5.4.5
+
 packages:
 
   /@ampproject/remapping/2.3.0:
