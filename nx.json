@@ -1,4 +1,17 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "defaultBase": "main"
+  "defaultBase": "main",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "test"]
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "inputs": ["!{projectRoot}/**/*.md"]
+    }
+  }
 }
