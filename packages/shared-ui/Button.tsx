@@ -1,5 +1,4 @@
 export function Button(props: any) {
-    return <Button onClick={() => props.onClick()}>{props.children}</Button>;
+    return <button onClick={() => props.onClick()}>{props.children}</button>;
 }
-
 export default Button;
