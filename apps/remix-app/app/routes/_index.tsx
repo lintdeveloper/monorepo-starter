@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Button } from 'shared-ui';
+{/* TODO: Resolve error with export a vite error */}
+// import { Button } from 'shared-ui';
 
 export const meta: MetaFunction = () => {
   return [
@@ -11,9 +12,10 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div> 
-      <Button onClick={() => console.log('clicked')}>
+      {/* TODO: Resolve error with export a vite error */}
+      {/* <Button onClick={() => console.log('clicked')}>
         Click Me 
-      </Button>
+      </Button> */}
     </div>
   );
 }

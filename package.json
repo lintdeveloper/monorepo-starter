@@ -8,6 +8,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "prepare": "husky install",
+    "build": "pnpm run --parallel -r build",
     "remix-app:dev": "pnpm --filter remix-app dev",
     "shared-ui:build": "pnpm --filter shared-ui build"
   },
