@@ -8,9 +8,10 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "build": "pnpm run --parallel -r build",
-    "remix-app:dev": "pnpm --filter remix-app dev",
-    "shared-ui:build": "pnpm --filter shared-ui build"
+    "build": "pnpm nx run-many --target=build --all",
+    "shared-ui:build": "pnpm nx build shared-ui",
+    "remix-app:build": "pnpm nx build remix-app",
+    "remix-app:dev": "pnpm nx dev remix-app"
   },
   "keywords": [],
   "author": "",
@@ -42,6 +43,7 @@
     "lint-staged": "^15.2.5",
     "prettier": "^3.2.5",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^7.11.0"
+    "typescript-eslint": "^7.11.0",
+    "nx": "19.1.1"
   }
 }
