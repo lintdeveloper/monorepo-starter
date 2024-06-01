@@ -12,5 +12,8 @@
   "engines": {
     "node": ">=16.17.1"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
 }
