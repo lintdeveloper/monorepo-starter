@@ -1,26 +1,25 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import react from "eslint-plugin-react"
-import typescriptEslint from "typescript-eslint";
-import typescriptParser from "@typescript-eslint/parser";
-import reactRecommended from "eslint-plugin-react/configs/recommended.js";
-
+import globals from 'globals'
+import pluginJs from '@eslint/js'
+import react from 'eslint-plugin-react'
+import typescriptEslint from 'typescript-eslint'
+import typescriptParser from '@typescript-eslint/parser'
+import reactRecommended from 'eslint-plugin-react/configs/recommended.js'
 
 export default [
   {
-    ignores: ["dist/**/*"],
+    ignores: ['dist/**/*'],
   },
   {
-    files: ["**/*.{js,jsx,mjs,cjs,ts,tsx}"],
-    ignores: ["dist/**/*"],
+    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+    ignores: ['dist/**/*'],
     ...reactRecommended,
     settings: {
-      version: "detect",
+      version: 'detect',
     },
     languageOptions: {
       ...reactRecommended.languageOptions,
-      ecmaVersion: "latest",
-      sourceType: "module",
+      ecmaVersion: 'latest',
+      sourceType: 'module',
       parser: typescriptParser,
       parserOptions: {
         ecmaFeatures: {
@@ -33,12 +32,12 @@ export default [
       },
     },
     plugins: {
-      "@typescript-eslint": typescriptEslint,
+      '@typescript-eslint': typescriptEslint,
       react,
     },
     rules: {
       //rules here
     },
   },
-  pluginJs.configs.recommended
-];
+  pluginJs.configs.recommended,
+]
